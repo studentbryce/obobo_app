@@ -1,0 +1,136 @@
+body { 
+    font-family: Arial, sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    background-color: #f0f0f0; 
+} 
+    
+.container { 
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    max-width: 400px; 
+    width: 100%; 
+} 
+
+.banner { 
+    background-color: #007bff; 
+    color: white; 
+    padding: 10px; 
+    margin: -20px -20px 20px -20px; 
+    border-radius: 10px 10px 0 0; 
+} 
+
+.banner p { 
+    margin: 0; 
+    font-size: 1.2em; 
+} 
+
+h1 { 
+    margin-top: 0; 
+} 
+
+.tabs { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+} 
+
+.tab-button { 
+    flex: 1; 
+    padding: 10px; 
+    border: none; 
+    background-color: #c4c4c4; 
+    cursor: pointer; 
+} 
+
+.tab-button.active { 
+    background-color: #007bff; 
+    color: white; 
+} 
+
+.tab-pane { 
+    display: none; 
+} 
+
+.tab-pane.active { 
+    display: block; 
+} 
+
+.time-display { 
+    font-size: 2em; 
+    margin: 20px 0; 
+} 
+
+.controls { 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+} 
+
+button { 
+    padding: 10px 20px; 
+    border: none; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer; 
+} 
+
+button:hover { 
+    background-color: #0056b3; 
+} 
+
+#lap-list { 
+    margin-top: 20px; 
+    max-height: 200px; 
+    overflow-y: auto; 
+} 
+
+.lap-item { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 5px 0; 
+    border-bottom: 1px solid #eee; 
+} 
+
+#alarm-time { 
+    margin-right: 10px; 
+} 
+
+#alarm-display { 
+    margin-top: 20px; 
+    font-weight: bold; 
+} 
+
+.alarm-ringing { 
+    color: red; 
+    animation: blink 1s infinite; 
+} 
+
+@keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } } 
+
+.instructions-box { 
+    margin-top: 20px; 
+    padding: 15px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    text-align: left; 
+} 
+
+.instructions-box h2 { 
+    margin-top: 0; 
+    font-size: 1.2em; 
+    color: #333; 
+} 
+
+.instructions-box p { 
+    font-size: 0.9em; 
+    line-height: 1.4; 
+    color: #666; 
+}

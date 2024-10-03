@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="banner">
+            <p>Welcome to the This App!</p>
+        </div>
+        <h1>OBOBO App</h1>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="stopwatch">Stopwatch</button>
+            <button class="tab-button" data-tab="laptimer">Lap Timer</button>
+            <button class="tab-button" data-tab="alarm">Alarm</button>
+        </div>
+        <div class="tab-content">
+            <div id="stopwatch" class="tab-pane active">
+                <div class="time-display">00:00:00.00</div>
+                <div class="controls">
+                    <button id="stopwatch-startstop">Start</button>
+                    <button id="stopwatch-reset">Reset</button>
+                </div>
+            </div>
+            <div id="laptimer" class="tab-pane">
+                <div class="time-display">00:00:00.00</div>
+                <div class="controls">
+                    <button id="laptimer-startstop">Start</button>
+                    <button id="laptimer-lap">Lap</button>
+                    <button id="laptimer-reset">Reset</button>
+                </div>
+                <div id="lap-list"></div>
+            </div>
+            <div id="alarm" class="tab-pane">
+                <input type="time" id="alarm-time">
+                <button id="alarm-set">Set Alarm</button>
+                <div id="alarm-display"></div>
+            </div>
+        </div>
+        <div class="instructions-box">
+            <h2>How to Use </h2>
+            <p><strong>Stopwatch:</strong> Press "Start" to begin counting time. Press "Stop" to pause. Press "Reset" to
+                set the time back to 00:00:00.00.</p>
+            <p><strong>Lap Timer:</strong> Press "Start" to begin timing. Press "Lap" to record individual lap times.
+                Press "Stop" to pause and "Reset" to clear all laps.</p>
+            <p><strong>Alarm:</strong> Set the time using the time input and press "Set Alarm." When the alarm rings, it
+                will blink "ALARM!" and play an alarm sound. Press "Cancel Alarm" to stop it.</p>
+        </div>
+        <footer class="footer">
+            <p>&copy; COMP.5211 2024</p>
+        </footer>
+    </div>
+    <audio id="alarm-sound" src="alert-alarm.wav"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
